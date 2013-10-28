@@ -1,5 +1,4 @@
-Operating-System-1
-==================
+Dotfiles
+========
 
-Semester : Fall 2013-2014
-Faculty  : FARHANA, FERDOUSI LIZA
+This directory contains nacessery dot files from my system
