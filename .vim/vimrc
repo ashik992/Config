@@ -122,7 +122,7 @@ if has("gui_running")
    " Remove Toolbar
    set guioptions-=T
    "Terminus is AWESOME
-   set guifont=Terminus\ 9
+   set guifont=Terminus\ 11
 else
    colorscheme metacosm
 endif
