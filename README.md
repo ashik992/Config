@@ -1,4 +1,4 @@
 Dotfiles
 ========
 
-This directory contains nacessery dot files from my system
+Just trying to keep the dot files arranged. :)
