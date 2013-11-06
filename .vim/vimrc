@@ -16,29 +16,15 @@ set nocompatible               " be iMproved
  Bundle 'git://github.com/tpope/vim-surround.git'
  Bundle 'https://github.com/vim-scripts/Align.git'
  Bundle 'jistr/vim-nerdtree-tabs'
- Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
+"Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
  Bundle 'https://github.com/scrooloose/nerdcommenter.git'
  "Bundle 'https://github.com/Rip-Rip/clang_complete.git'
- "Bundle 'https://github.com/Yggdroot/indentLine.git'
- " original repos on github
- "Bundle 'tpope/vim-fugitive'
- "Bundle 'Lokaltog/vim-easymotion'
- "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- "Bundle 'tpope/vim-rails.git'
- " vim-scripts repos
- "Bundle 'L9'
- "Bundle 'FuzzyFinder'
- " non github repos
- "Bundle 'git://git.wincent.com/command-t.git'
- " git repos on your local machine (ie. when working on your own plugin)
- "Bundle 'file:///Users/gmarik/path/to/plugin'
- " ...
+ Bundle 'https://github.com/Yggdroot/indentLine.git'
 
- "let g:indentLine_char = '|'
- let g:indent_guides_start_level = 1
- let g:indent_guides_guide_size = 1
+ let g:indentLine_char = '┆'
 
- "Dotted Indent
+ "Pathogen
+ execute pathogen#infect()
 
  filetype plugin indent on     " required!
  "
@@ -82,8 +68,8 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=3
+set softtabstop=3
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700
@@ -93,10 +79,6 @@ endif
 
 " Real men use gcc
 "compiler gcc
-
-" Cool tab completion stuff
-set wildmenu
-set wildmode=list:longest,full
 
 " Enable mouse support in console
 set mouse=a
@@ -141,8 +123,7 @@ if has("gui_running")
     colorscheme solarized
    " Remove Toolbar
    set guioptions-=T
-   "Terminus is AWESOME
-   set guifont="Anonymus Pro Munus Bold Italic"\10
+   set guifont=Consolas\10
 else
    colorscheme darkzen
 endif
