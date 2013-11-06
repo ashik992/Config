@@ -14,7 +14,12 @@ set nocompatible               " be iMproved
  Bundle 'https://github.com/Raimondi/delimitMate.git'
  Bundle 'https://github.com/scrooloose/nerdtree.git'
  Bundle 'git://github.com/tpope/vim-surround.git'
+ Bundle 'https://github.com/vim-scripts/Align.git'
  Bundle 'jistr/vim-nerdtree-tabs'
+ Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
+ Bundle 'https://github.com/scrooloose/nerdcommenter.git'
+ "Bundle 'https://github.com/Rip-Rip/clang_complete.git'
+ "Bundle 'https://github.com/Yggdroot/indentLine.git'
  " original repos on github
  "Bundle 'tpope/vim-fugitive'
  "Bundle 'Lokaltog/vim-easymotion'
@@ -28,6 +33,12 @@ set nocompatible               " be iMproved
  " git repos on your local machine (ie. when working on your own plugin)
  "Bundle 'file:///Users/gmarik/path/to/plugin'
  " ...
+
+ "let g:indentLine_char = '|'
+ let g:indent_guides_start_level = 1
+ let g:indent_guides_guide_size = 1
+
+ "Dotted Indent
 
  filetype plugin indent on     " required!
  "
@@ -43,43 +54,8 @@ set nocompatible               " be iMproved
 
 syntax enable
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
-"{{{Auto Commands
-
-" Automatically cd into the directory that the file is in
-autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
-
-" Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
-" Restore cursor position to where it was before
-augroup JumpCursorOnEdit
-   au!
-   autocmd BufReadPost *
-            \ if expand("<afile>:p:h") !=? $TEMP |
-            \   if line("'\"") > 1 && line("'\"") <= line("$") |
-            \     let JumpCursorOnEdit_foo = line("'\"") |
-            \     let b:doopenfold = 1 |
-            \     if (foldlevel(JumpCursorOnEdit_foo) > foldlevel(JumpCursorOnEdit_foo - 1)) |
-            \        let JumpCursorOnEdit_foo = JumpCursorOnEdit_foo - 1 |
-            \        let b:doopenfold = 2 |
-            \     endif |
-            \     exe JumpCursorOnEdit_foo |
-            \   endif |
-            \ endif
-   " Need to postpone using "zv" until after reading the modelines.
-   autocmd BufWinEnter *
-            \ if exists("b:doopenfold") |
-            \   exe "normal zv" |
-            \   if(b:doopenfold > 1) |
-            \       exe  "+".1 |
-            \   endif |
-            \   unlet b:doopenfold |
-            \ endif
-augroup END
-
-"}}}
 
 "{{{Misc Settings
 
@@ -106,8 +82,8 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=3
-set softtabstop=3
+set shiftwidth=4
+set softtabstop=4
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700
@@ -166,9 +142,9 @@ if has("gui_running")
    " Remove Toolbar
    set guioptions-=T
    "Terminus is AWESOME
-   set guifont=Terminus\ 11
+   set guifont="Anonymus Pro Munus Bold Italic"\10
 else
-   colorscheme github
+   colorscheme darkzen
 endif
 
 "Status line gnarliness
