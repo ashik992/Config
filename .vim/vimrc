@@ -43,6 +43,13 @@ set background=dark
 colorscheme solarized
 
 
+"Switch between splits
+ nmap <silent> <A-Up> :wincmd k<CR>
+ nmap <silent> <A-Down> :wincmd j<CR>
+ nmap <silent> <A-Left> :wincmd h<CR>
+ nmap <silent> <A-Right> :wincmd l<CR>
+
+
 "{{{Misc Settings
 
 " Necesary  for lots of cool vim things
@@ -52,7 +59,7 @@ set nocompatible
 set showcmd
 
 " Folding Stuffs
-set foldmethod=marker
+set foldmethod=syntax
 
 " Needed for Syntax Highlighting and stuff
 filetype on
@@ -120,12 +127,14 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-    colorscheme solarized
+    colorscheme jellybeans
+    "maximized gvim window
+    set lines=999 columns=999
    " Remove Toolbar
    set guioptions-=T
-   set guifont=Consolas\10
+   set guifont=Anonymous Pro\10
 else
-   colorscheme darkzen
+   colorscheme jellybeans
 endif
 
 "Status line gnarliness
