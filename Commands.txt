@@ -1,0 +1,5 @@
+//BackSpace to up in file manager
+
+vim .config/nautilus/accels
+#at the end of the file
+(gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")
