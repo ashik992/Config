@@ -10,7 +10,7 @@ set nocompatible               " be iMproved
 
  " My Bundles here:
  Bundle 'https://github.com/Valloric/YouCompleteMe.git'
- Bundle 'https://github.com/Valloric/MatchTagAlways.git'
+ "Bundle 'https://github.com/Valloric/MatchTagAlways.git'
  Bundle 'https://github.com/Raimondi/delimitMate.git'
  Bundle 'https://github.com/scrooloose/nerdtree.git'
  Bundle 'git://github.com/tpope/vim-surround.git'
@@ -20,11 +20,8 @@ set nocompatible               " be iMproved
  Bundle 'https://github.com/scrooloose/nerdcommenter.git'
  "Bundle 'https://github.com/Rip-Rip/clang_complete.git'
  Bundle 'https://github.com/Yggdroot/indentLine.git'
-
+ Bundle 'https://github.com/jiangmiao/auto-pairs.git'
  let g:indentLine_char = '┆'
-
- "Pathogen
- execute pathogen#infect()
 
  filetype plugin indent on     " required!
  "
@@ -132,7 +129,7 @@ if has("gui_running")
     set lines=999 columns=999
    " Remove Toolbar
    set guioptions-=T
-   set guifont=Anonymous Pro\10
+   set guifont=Source Code Pro\12
 else
    colorscheme jellybeans
 endif
