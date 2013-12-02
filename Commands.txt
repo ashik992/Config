@@ -1,10 +1,13 @@
 //BackSpace to up in file manager
-
 vim .config/nautilus/accels
 #at the end of the file
 (gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")
 
 
 //Git Save ID & pass
-
 git config --global credential.helper "cache --timeout=3600"
+
+
+//JAVA path
+export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
+expor tPATH=$PATH:/usr/lib/jvm/java-6-openjdk/bin
