@@ -4,8 +4,9 @@ vim .config/nautilus/accels
 (gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")
 
 
-//Git Save ID & pass
+//Git Save ID , pass & server
 git config --global credential.helper "cache --timeout=3600"
+git remote add origin https://github.com/ashik992/.....
 
 
 //JAVA path
