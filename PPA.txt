@@ -9,3 +9,6 @@
 
 *Conky Manager
    ppa:teejee2008/ppa
+
+*Banshee latest
+   ppa:banshee-team/ppa
