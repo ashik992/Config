@@ -12,3 +12,6 @@ git remote add origin https://github.com/ashik992/.....
 //JAVA path
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 expor tPATH=$PATH:/usr/lib/jvm/java-6-openjdk/bin
+
+//Skype icon package
+sni-qt:i386
