@@ -1,17 +1,31 @@
-//BackSpace to up in file manager
+# BackSpace to up in file manager
 vim .config/nautilus/accels
 #at the end of the file
 (gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")
 
 
-//Git Save ID , pass & server
+# Git Save ID , pass & server
 git config --global credential.helper "cache --timeout=3600"
 git remote add origin https://github.com/ashik992/.....
 
 
-//JAVA path
+# JAVA path
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 expor tPATH=$PATH:/usr/lib/jvm/java-6-openjdk/bin
 
-//Skype icon package
+# Skype icon package
 sni-qt:i386
+
+# Hibernate
+$ sudo gedit /var/lib/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+#Inside the file
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
