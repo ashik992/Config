@@ -21,7 +21,9 @@ set nocompatible               " be iMproved
  "Bundle 'https://github.com/Rip-Rip/clang_complete.git'
  Bundle 'https://github.com/Yggdroot/indentLine.git'
  Bundle 'https://github.com/jiangmiao/auto-pairs.git'
+ Bundle 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
  let g:indentLine_char = '┆'
+ :set cursorline
 
  filetype plugin indent on     " required!
  "
@@ -39,6 +41,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+"Highlite line
 
 "Switch between splits
  nmap <silent> <A-Up> :wincmd k<CR>
