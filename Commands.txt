@@ -29,3 +29,13 @@ ResultActive=yes
 Identity=unix-user:*
 Action=org.freedesktop.login1.hibernate
 ResultActive=yes
+
+# Cpu fan
+
+$ sudo modprobe -v i8k
+$ sudo apt-get install i8kutils
+#Edit /etc/default/i8kbuttons and /etc/default/i8kmon
+# ENABLE=1
+$i8kctl
+version biosVersion nachineId cpuTemp leftFan rightFan LeftFanSpeed rightFanSpeed cpPower buttonStatus
+
