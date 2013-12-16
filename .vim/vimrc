@@ -22,6 +22,7 @@ set nocompatible               " be iMproved
  Bundle 'https://github.com/Yggdroot/indentLine.git'
  Bundle 'https://github.com/jiangmiao/auto-pairs.git'
  Bundle 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
+ Bundle 'https://github.com/mattn/emmet-vim.git'
  let g:indentLine_char = '┆'
  :set cursorline
 
