@@ -1,2 +1,5 @@
-sudo sed -i '$ib=$(cat /usr/local/etc/.brightness)' /etc/rc.local
-sudo sed -i '$ixbacklight -set $b' /etc/rc.local
+sudo apt-get install xbacklight
+sudo sed -i '$ixbacklight | cat > ~/.brightness' /etc/gdm/PostSession/Default
+touch ~/.gnomerc
+echo 'b=$(cat ~/.brightness)' >> ~/.gnomerc
+echo 'xbacklight -set $b' >> ~/.gnomerc
