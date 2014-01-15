@@ -10,7 +10,7 @@ set nocompatible               " be iMproved
 
  " My Bundles here:
  Bundle 'https://github.com/Valloric/YouCompleteMe.git'
- "Bundle 'https://github.com/Valloric/MatchTagAlways.git'
+ Bundle 'https://github.com/Valloric/MatchTagAlways.git'
  Bundle 'https://github.com/Raimondi/delimitMate.git'
  Bundle 'https://github.com/scrooloose/nerdtree.git'
  Bundle 'git://github.com/tpope/vim-surround.git'
@@ -127,7 +127,7 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-    colorscheme solarized
+    colorscheme codeschool
     "maximized gvim window
     set lines=999 columns=999
    " Remove Toolbar

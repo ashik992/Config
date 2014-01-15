@@ -1,3 +1,4 @@
 Dotfiles
 =========
-Trying to keep the '.' files form my system organized.
+Trying to keep my configuration files and scripts in one place
+
