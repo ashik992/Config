@@ -39,3 +39,5 @@ $ sudo apt-get install i8kutils
 $i8kctl
 version biosVersion nachineId cpuTemp leftFan rightFan LeftFanSpeed rightFanSpeed cpPower buttonStatus
 
+#Screen turn off
+xset dpms 300 600
