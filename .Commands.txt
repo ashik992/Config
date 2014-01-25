@@ -41,3 +41,8 @@ version biosVersion nachineId cpuTemp leftFan rightFan LeftFanSpeed rightFanSpee
 
 #Screen turn off
 xset dpms 300 600
+
+#Windows boot repair
+sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+
