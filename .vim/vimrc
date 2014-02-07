@@ -127,7 +127,7 @@ highlight MatchParen ctermbg=4
 
 " Favorite Color Scheme
 if has("gui_running")
-    colorscheme codeschool
+    colorscheme jellybeans
     "maximized gvim window
     set lines=999 columns=999
    " Remove Toolbar
