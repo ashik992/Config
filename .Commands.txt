@@ -1,0 +1,48 @@
+# BackSpace to up in file manager
+vim .config/nautilus/accels
+#at the end of the file
+(gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")
+
+
+# Git Save ID , pass & server
+git config --global credential.helper "cache --timeout=3600"
+git remote add origin https://github.com/ashik992/.....
+
+
+# JAVA path
+export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
+expor tPATH=$PATH:/usr/lib/jvm/java-6-openjdk/bin
+
+# Skype icon package
+sni-qt:i386
+
+# Hibernate
+$ sudo gedit /var/lib/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+#Inside the file
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
+
+# Cpu fan
+
+$ sudo modprobe -v i8k
+$ sudo apt-get install i8kutils
+#Edit /etc/default/i8kbuttons and /etc/default/i8kmon
+# ENABLE=1
+$i8kctl
+version biosVersion nachineId cpuTemp leftFan rightFan LeftFanSpeed rightFanSpeed cpPower buttonStatus
+
+#Screen turn off
+xset dpms 300 600
+
+#Windows boot repair
+sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+
