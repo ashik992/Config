@@ -49,3 +49,6 @@ sudo apt-get install -y boot-repair && boot-repair
 #Install fonts
 sudo apt-get install fonts-cantarell lmodern ttf-aenigma ttf-georgewilliams ttf-bitstream-vera ttf-sjfonts ttf-tuffy tv-fonts
 
+#Password visible
+sudo visudo
+Defaults env_reset,pwfeedback
