@@ -10,18 +10,9 @@ set nocompatible               " be iMproved
  Bundle 'gmarik/vundle'
 
  " My Bundles here:
- Bundle 'https://github.com/Valloric/YouCompleteMe.git'
- "Bundle 'https://github.com/Valloric/MatchTagAlways.git'
- Bundle 'https://github.com/Raimondi/delimitMate.git'
- Bundle 'https://github.com/scrooloose/nerdtree.git'
- Bundle 'git://github.com/tpope/vim-surround.git'
- Bundle 'https://github.com/vim-scripts/Align.git'
- Bundle 'jistr/vim-nerdtree-tabs'
-"Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
- Bundle 'https://github.com/scrooloose/nerdcommenter.git'
- "Bundle 'https://github.com/Rip-Rip/clang_complete.git'
  Bundle 'https://github.com/Yggdroot/indentLine.git'
  Bundle 'https://github.com/jiangmiao/auto-pairs.git'
  Bundle 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
+
  let g:indentLine_char = '┆'
  :set cursorline
