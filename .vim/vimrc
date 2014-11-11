@@ -83,13 +83,13 @@ autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '
 "=======================================
 "Visual Stuff  = = = = = = = = = = = = =
 "=======================================
-colorscheme gruvbox          " Set the color seheme
-set background=dark          " Setting dark mode
-set number                   " Show line number
-set mouse=a                  " Mouse support on console
-set cursorline               " Hilights the line with cursor
-set hlsearch                 " Highlight this that we search
-set foldmethod=syntax
+colorscheme jellybeans " Set the color seheme
+set background=dark    " Setting dark mode
+set number             " Show line number
+set mouse=a            " Mouse support on console
+set cursorline         " Hilights the line with cursor
+set hlsearch           " Highlight this that we search
+set foldmethod=syntax  " Set line fold method depending on syntax
 
 
 if has("gui_running")        " GUI only Configs
