@@ -42,6 +42,9 @@ Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'jelera/vim-javascript-syntax'
     "Javascript highlighting
 
+Plugin 'https://github.com/mattn/emmet-vim'
+    "Emmet for html, css 
+
 Plugin 'https://github.com/marijnh/tern_for_vim.git'
     "JS auto complete
 
@@ -68,8 +71,8 @@ filetype plugin indent on    " required
 " Plugin Configs  = = = = = = = = = = = 
 "=======================================
 let g:indentLine_char = '•'       " Char that indicates the indent
-imap ss <esc>a<Plug>snipMateNextOrTrigger
-smap ss <Plug>snipMateNextOrTrigger
+imap xx <esc>a<Plug>snipMateNextOrTrigger
+smap xx <Plug>snipMateNextOrTrigger
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 nnoremap <CR> :noh<CR><CR>
 let g:ycm_error_symbol = '•>'
@@ -93,20 +96,25 @@ autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '
 "=======================================
 "Visual Stuff  = = = = = = = = = = = = =
 "=======================================
-colorscheme jellybeans " Set the color seheme
-set background=dark    " Setting dark mode
-set number             " Show line number
-set mouse=a            " Mouse support on console
-set cursorline         " Hilights the line with cursor
-set hlsearch           " Highlight this that we search
-set foldmethod=syntax  " Set line fold method depending on syntax
+colorscheme jellybeans       " Set the color seheme
+set background=dark          " Setting dark mode
+set number                   " Show line number
+set mouse=a                  " Mouse support on console
+set cursorline               " Hilights the line with cursor
+set hlsearch                 " Highlight this that we search
+set foldmethod=syntax        " Set line fold method depending on syntax
+set synmaxcol=150            " No systax color for raw text
 
 
-if has("gui_running")        " GUI only Configs
+if has("gui_running")       " GUI only Configs
 set lines=999 columns=999    " Start fullscreen
 set guioptions-=T            " No toolber in GUI
 set guifont=ProggyCleanTT\14 " GUI font and size
 endif
+
+set wrap                     " soft-wrap lines
+set showbreak=------>        " prefix for soft-wrapped lines (no actual line break character)
+set cpoptions+=n
 
 "=======================================
 "Editing Stuff  = = = = = = = = = = = = 
