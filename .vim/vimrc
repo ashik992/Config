@@ -58,9 +58,9 @@ Plugin 'honza/vim-snippets'           "Snipmate
     "Completes functions with tab
 
     "Commented cz not working
-Plugin 'Shougo/vimproc'              "PHP-Complete-ex
-Plugin 'Shougo/unite.vim'            "PHP-Complete-ex
-Plugin 'm2mdas/phpcomplete-extended' "PHP-Complete-ex
+" Plugin 'Shougo/vimproc'              "PHP-Complete-ex
+" Plugin 'Shougo/unite.vim'            "PHP-Complete-ex
+" Plugin 'm2mdas/phpcomplete-extended' "PHP-Complete-ex
     " Complete PHP syntex wiht dropdo
 
 Plugin 'morhetz/gruvbox'
@@ -108,6 +108,8 @@ inoremap <C-@> <C-Space>
 autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <F6> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' -lGL -lGLU -lGLEW -lglut -lm && ./'.shellescape('%:r')<CR>
+autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' -lGL -lGLU -lGLEW -lglut -lm && ./'.shellescape('%:r')<CR>
 
 "=======================================
 "Visual Stuff  = = = = = = = = = = = = =
