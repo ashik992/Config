@@ -84,3 +84,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # fi
 
 export TERM='xterm-256color'
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/ahmed/.gvm/bin/gvm-init.sh" ]] && source "/home/ahmed/.gvm/bin/gvm-init.sh"
