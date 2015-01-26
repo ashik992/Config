@@ -123,16 +123,16 @@ set hlsearch                 " Highlight this that we search
 set foldmethod=syntax        " Set line fold method depending on syntax
 set synmaxcol=150            " No systax color for raw text
 
-
 if has("gui_running")       " GUI only Configs
-set lines=999 columns=999    " Start fullscreen
-set guioptions-=T            " No toolber in GUI
-set guifont="Source Code Pro"\14 " GUI font and size
+    set lines=999 columns=999    " Start fullscreen
+    set guioptions-=T            " No toolber in GUI
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ 12 " GUI font and size
 endif
 
 set wrap                     " soft-wrap lines
 set showbreak=------>        " prefix for soft-wrapped lines (no actual line break character)
 set cpoptions+=n
+set lazyredraw
 
 "=======================================
 "Editing Stuff  = = = = = = = = = = = = 
