@@ -116,7 +116,7 @@ autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.s
 "=======================================
 "Visual Stuff  = = = = = = = = = = = = =
 "=======================================
-colorscheme jellybeans        "Set the color seheme
+colorscheme transparent      "Set the color seheme
 set background=dark          " Setting dark mode
 set number                   " Show line number
 set mouse=a                  " Mouse support on console
@@ -129,6 +129,7 @@ if has("gui_running")       " GUI only Configs
     set lines=999 columns=999    " Start fullscreen
     set guioptions-=T            " No toolber in GUI
     set guifont=Source\ Code\ Pro\ for\ Powerline\ 12 " GUI font and size
+    colorscheme wolfpack         "Set the GUI color seheme
 endif
 
 set wrap                     " soft-wrap lines
