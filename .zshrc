@@ -85,6 +85,10 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 export TERM='xterm-256color'
 alias fucking=sudo
+alias g=gvim
+alias v=vim
+alias CG='cd ~/Courses/Computer_Graphics'
+alias AI='cd ~/Courses/Artificial_Intelligence'
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/home/ahmed/.gvm/bin/gvm-init.sh" ]] && source "/home/ahmed/.gvm/bin/gvm-init.sh"
