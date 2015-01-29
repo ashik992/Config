@@ -47,14 +47,17 @@ Plugin 'https://github.com/mattn/emmet-vim'
 
 Plugin 'https://github.com/marijnh/tern_for_vim.git'
     "JS auto complete
- Plugin 'https://github.com/beyondmarc/opengl.vim'
+Plugin 'https://github.com/beyondmarc/opengl.vim'
     "Opengl Syntax
     
-    Plugin 'tmhedberg/SimpylFold'
-        " python fold
+Plugin 'https://github.com/tpope/vim-fugitive'
+    "Git Plugin
+
+Plugin 'tmhedberg/SimpylFold'
+    " python fold
     
-    Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
-    Plugin 'tomtom/tlib_vim'              "Snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
+Plugin 'tomtom/tlib_vim'              "Snipmate
 Plugin 'garbas/vim-snipmate'          "Snipmate
 Plugin 'honza/vim-snippets'           "Snipmate
     "Completes functions with tab
