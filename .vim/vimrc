@@ -106,6 +106,7 @@ nmap <Esc><Esc> <Esc>:w<CR>
 nmap <F4> <Esc>:q<CR>
 nmap <C-J> o<Esc>
 nmap <C-K> O<Esc>
+inoremap ;; <ESC>A;<ESC>o
 inoremap {<CR> {<CR>}<C-o>O
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
