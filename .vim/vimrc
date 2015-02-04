@@ -47,7 +47,7 @@ Plugin 'https://github.com/mattn/emmet-vim'
 
 Plugin 'https://github.com/marijnh/tern_for_vim.git'
     "JS auto complete
-Plugin 'https://github.com/beyondmarc/opengl.vim'
+" Plugin 'https://github.com/beyondmarc/opengl.vim'
     "Opengl Syntax
     
 Plugin 'https://github.com/tpope/vim-fugitive'
@@ -111,6 +111,12 @@ inoremap {<CR> {<CR>}<C-o>O
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 
+"=======================================
+" Abbriviations  = = = = = = = = = = = =
+"=======================================
+iab #i #include <><ESC>i
+iab mainf int main(){<CR>return 0;<ESC><S-O>
+iab usi using namespace std;;
 
 " maping for saving and compiling wiht F5 key
 autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
