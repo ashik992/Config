@@ -47,7 +47,7 @@ Plugin 'https://github.com/mattn/emmet-vim'
 
 Plugin 'https://github.com/marijnh/tern_for_vim.git'
     "JS auto complete
-" Plugin 'https://github.com/beyondmarc/opengl.vim'
+Plugin 'https://github.com/beyondmarc/opengl.vim'
     "Opengl Syntax
     
 Plugin 'https://github.com/tpope/vim-fugitive'
@@ -55,7 +55,11 @@ Plugin 'https://github.com/tpope/vim-fugitive'
 
 Plugin 'tmhedberg/SimpylFold'
     " python fold
-    
+
+Plugin 'https://github.com/altercation/vim-colors-solarized'
+    " Solarized color
+
+
 Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
 Plugin 'tomtom/tlib_vim'              "Snipmate
 Plugin 'garbas/vim-snipmate'          "Snipmate
@@ -78,6 +82,7 @@ filetype plugin indent on    " required
 "=======================================
 " Plugin Configs  = = = = = = = = = = = 
 "=======================================
+let g:indentline_color_gui = '#000000'
 let g:indentLine_char = '•'       " Char that indicates the indent
 imap xx <esc>a<Plug>snipMateNextOrTrigger
 smap xx <Plug>snipMateNextOrTrigger
@@ -85,6 +90,7 @@ autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 nnoremap <CR> :noh<CR><CR>
 let g:ycm_error_symbol = '•>'
 let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_confirm_extra_conf = 0
 imap yy <C-Y>,
 smap yy <C-Y>,
 
@@ -132,7 +138,7 @@ colorscheme transparent      "Set the color seheme
 set background=dark          " Setting dark mode
 set number                   " Show line number
 set mouse=a                  " Mouse support on console
-set cursorline               " Hilights the line with cursor
+set cursorline cursorcolumn  " Hilights the line with cursor
 set hlsearch                 " Highlight this that we search
 set foldmethod=syntax        " Set line fold method depending on syntax
 set synmaxcol=150            " No systax color for raw text
@@ -141,7 +147,7 @@ if has("gui_running")       " GUI only Configs
     set lines=999 columns=999    " Start fullscreen
     set guioptions-=T            " No toolber in GUI
     set guifont=Source\ Code\ Pro\ for\ Powerline\ 12 " GUI font and size
-    colorscheme wolfpack         "Set the GUI color seheme
+    colorscheme solarized "Set the GUI color seheme
 endif
 
 set wrap                     " soft-wrap lines
