@@ -136,6 +136,7 @@ autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.s
 "=======================================
 colorscheme transparent      "Set the color seheme
 set background=dark          " Setting dark mode
+set relativenumber           " Show relative line number
 set number                   " Show line number
 set mouse=a                  " Mouse support on console
 set cursorline cursorcolumn  " Hilights the line with cursor
