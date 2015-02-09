@@ -136,9 +136,12 @@ autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.s
 "=======================================
 colorscheme transparent      "Set the color seheme
 set background=dark          " Setting dark mode
+set relativenumber
 au FocusGained * set relativenumber           " Show relative line number
 au FocusLost * set norelativenumber " Show line number
+au FocusLost * set number " Show line number
 autocmd InsertEnter * :set norelativenumber 
+autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 set mouse=a                  " Mouse support on console
 set cursorline cursorcolumn  " Hilights the line with cursor
@@ -150,7 +153,7 @@ if has("gui_running")       " GUI only Configs
     set lines=999 columns=999    " Start fullscreen
     set guioptions-=T            " No toolber in GUI
     set guifont=Source\ Code\ Pro\ for\ Powerline\ 12 " GUI font and size
-    colorscheme solarized "Set the GUI color seheme
+    colorscheme railscasts "Set the GUI color seheme
 endif
 
 set wrap                     " soft-wrap lines
