@@ -59,6 +59,9 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'https://github.com/altercation/vim-colors-solarized'
     " Solarized color
 
+Plugin 'https://github.com/terryma/vim-multiple-cursors'
+" S
+    " Multiple cursors
 
 Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
 Plugin 'tomtom/tlib_vim'              "Snipmate
