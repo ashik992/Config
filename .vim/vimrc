@@ -137,7 +137,7 @@ autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.s
 "=======================================
 "Visual Stuff  = = = = = = = = = = = = =
 "=======================================
-colorscheme transparent      "Set the color seheme
+colorscheme heroku-terminal  "Set the color seheme
 set background=dark          " Setting dark mode
 set relativenumber
 au FocusGained * set relativenumber           " Show relative line number
