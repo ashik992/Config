@@ -92,6 +92,7 @@ alias AI='cd ~/Courses/Artificial_Intelligence'
 alias fuckoff=exit
 alias e=exit
 alias xampp='pushd /opt/lampp; sudo setsid ./manager-linux-x64.run; popd'
+zstyle ':completion:*:processes-names' command 'ps -e -o comm='
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/home/ahmed/.gvm/bin/gvm-init.sh" ]] && source "/home/ahmed/.gvm/bin/gvm-init.sh"
