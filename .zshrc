@@ -93,6 +93,7 @@ alias fuckoff=exit
 alias e=exit
 alias xampp='pushd /opt/lampp; sudo setsid ./manager-linux-x64.run; popd'
 alias c=clear
+alias vimrc="vim ~/.vim/vimrc"
 
 
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='

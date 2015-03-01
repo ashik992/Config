@@ -99,7 +99,6 @@ let g:ycm_confirm_extra_conf = 0
 imap yy <C-Y>,
 smap yy <C-Y>,
 
-
 "Powerline 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
