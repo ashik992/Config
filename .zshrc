@@ -95,6 +95,7 @@ alias xampp='pushd /opt/lampp; sudo setsid ./manager-linux-x64.run; popd'
 alias c=clear
 alias vimrc="vim ~/.vim/vimrc"
 alias gitck="git checkout"
+alias text="python ~/Projects/UDACITY/Python/sendtext.py"
 
 
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='
