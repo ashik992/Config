@@ -127,6 +127,8 @@ inoremap <C-@> <C-Space>
 iab #i #include <><ESC>i
 iab mainf int main(){<CR>return 0;<ESC><S-O>
 iab usi using namespace std;;
+iab ct cout<<|
+iab ci cin>>|
 
 " maping for saving and compiling wiht F5 key
 autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
