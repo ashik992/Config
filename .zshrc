@@ -96,7 +96,11 @@ alias c=clear
 alias vimrc="vim ~/.vim/vimrc"
 alias gitck="git checkout"
 alias text="python ~/Projects/UDACITY/Python/sendtext.py"
-
+alias root="sudo -s"
+alias lsd="ls -d */"
+alias lsdoc="ls *(.doc|.dcx|.pt|.ptx)*"
+alias lscod="ls -rtd *(.c|.cpp|.py|.java|.cs|.js)*"
+alias gic="git commit -am"
 
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='
 
