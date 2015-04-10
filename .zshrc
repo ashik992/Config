@@ -100,6 +100,7 @@ alias root="sudo -s"
 alias lsd="ls -d */"
 alias lsdoc="ls *(.doc|.dcx|.pt|.ptx)*"
 alias lscod="ls -rtd *(.c|.cpp|.py|.java|.cs|.js)*"
+S
 alias gic="git commit -am"
 
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='
