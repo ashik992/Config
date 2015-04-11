@@ -101,6 +101,9 @@ alias lsd="ls -d */"
 alias lsdoc="ls *(.doc|.dcx|.pt|.ptx)*"
 alias lscod="ls -rtd *(.c|.cpp|.py|.java|.cs|.js)*"
 alias gic="git commit -am"
+alias g++11="g++ -std=c++11"
+alias g++0x="g++ -c -std=c++0x"
+
 
 zstyle ':completion:*:processes-names' command 'ps -e -o comm='
 
