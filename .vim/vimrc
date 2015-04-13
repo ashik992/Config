@@ -1,4 +1,5 @@
 "========================================
+"
 "Bundle stuff  = = = = = = = = = = = = = 
 "========================================
 set nocompatible              " be iMproved, required
@@ -67,6 +68,9 @@ Plugin 'https://github.com/terryma/vim-multiple-cursors'
 Plugin 'majutsushi/tagbar'
     " cpp sturcture
 
+Plugin 'ervandew/supertab'
+    " does evrything with tab
+
 Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
 Plugin 'tomtom/tlib_vim'              "Snipmate
 Plugin 'garbas/vim-snipmate'          "Snipmate
@@ -95,6 +99,7 @@ imap xx <esc>a<Plug>snipMateNextOrTrigger
 smap xx <Plug>snipMateNextOrTrigger
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 nnoremap <CR> :noh<CR><CR>
+nnoremap d "_d
 let g:ycm_error_symbol = '•>'
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_confirm_extra_conf = 0
