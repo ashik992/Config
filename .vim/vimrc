@@ -62,8 +62,10 @@ Plugin 'https://github.com/altercation/vim-colors-solarized'
 Plugin 'https://github.com/tmhedberg/matchit'
 
 Plugin 'https://github.com/terryma/vim-multiple-cursors'
-" S
     " Multiple cursors
+
+Plugin 'majutsushi/tagbar'
+    " cpp sturcture
 
 Plugin 'MarcWeber/vim-addon-mw-utils' "Snipmate
 Plugin 'tomtom/tlib_vim'              "Snipmate
@@ -117,6 +119,7 @@ nmap <F4> <Esc>:q<CR>
 nmap <C-J> o<Esc>
 nmap <C-K> O<Esc>
 nmap <C-W> <C-W><C-W>
+nmap <F8> :TagbarToggle<CR>
 inoremap ;; <ESC>A;<ESC>o
 inoremap {<CR> {<CR>}<C-o>O
 inoremap <C-Space> <C-x><C-o>
