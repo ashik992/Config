@@ -98,10 +98,7 @@ let g:indentLine_char = '•'       " Char that indicates the indent
 imap xx <esc>a<Plug>snipMateNextOrTrigger
 smap xx <Plug>snipMateNextOrTrigger
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
-nnoremap <CR> :noh<CR><CR>
-nnoremap d "_d
-nnoremap , :tabp<CR>
-nnoremap . :tabn<CR>
+
 let g:ycm_error_symbol = '•>'
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_confirm_extra_conf = 0
@@ -129,8 +126,12 @@ nmap <C-W> <C-W><C-W>
 nmap <F8> :TagbarToggle<CR>
 inoremap ;; <ESC>A;<ESC>o
 inoremap {<CR> {<CR>}<C-o>O
-inoremap <C-Space> <C-x><C-o>
-inoremap <C-@> <C-Space>
+nnoremap <CR> :noh<CR><CR>
+nnoremap d "_d
+nnoremap , :tabp<CR>
+nnoremap . :tabn<CR>
+nnoremap <TAB> zA
+nnoremap <F7> :!make<CR> 
 
 "=======================================
 " Abbriviations  = = = = = = = = = = = =
